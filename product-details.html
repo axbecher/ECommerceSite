@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axell's Hub | Ecommerce Website</title>
+    <title>Watch Dogs-Legion | Ecommerce Website</title>
     <link rel="stylesheet" href="style.css"> 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
-    <div class="header">
+    
         <div class="container">
             <div class="navbar">
                 <div class="logo">
@@ -29,55 +29,58 @@
                 <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
                 <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
             </div>
-            <div class="row">
-                <div class="col-2">
-                    <h1> Ai terminat jocul acela greu însă simți că vrei o altă provocare?</h1>
-                    <p>Noi avem cele mai noi și căutate jocuri.</p>
-                    <a href="" class="btn">EXPLORE NOW &#8594;</a>
+        </div>
+    <!--- single product details --->
+    
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/product-1.jpg" width="100%" id="ProductImg">
+                
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/gallery-1.jpg" width="100%" id="SmallImg1" onclick='changeImage(images/gallery-1.jpg)'>
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-2.jpg" width="100%" id="SmallImg2">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-3.jpg" width="100%" id="SmallImg3">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/gallery-4.jpg" width="100%" id="SmallImg4">
+                    </div>
                 </div>
-                <div class="col-2">
-                    <img src="images/image1.png">
-                </div>
+            </div>
+            <div class="col-2">
+                <p>Home / UPLAY</p>
+                <h1>Watch Dogs: Legion | Uplay Key</h1>
+                <h4>299,90 RON</h4>
+                <a href="" class="btn">Add To Cart</a>
+                
+                <h3>Product Details <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>Bun venit in Londra! Un oras iconic insa foarte schimbat datorita tehnologiei avansate. Noul joc din seria Watch Dogs iti permite sa recrutezi orice persoana pe care o vezi in acest oras pentru DedSec. Oamenii sunt asupriti de oportunisti corupti si depinde de tine sa construiesti o echipa pentru a da inapoi orasul oamenilor. Cu o intreaga populatie de recruti potentiali si cu tehnologia orasului la indemana ta, va trebui sa te hranesti, sa te infiltrezi si sa te lupti pentru Londra.</p>
             </div>
         </div>
     </div>
-    
-<!---- Zona categoriilor -->
-    <div class="categories">
-        <div class="small-container">
-            <h2 class="title">Categorii</h2>
-                <div class="row">
-                    <div class="col-3">
-                    <h3>Jocuri - coduri download,licente <br>electronice</h3>
-                    <img src="images/category-1.jpg">
-                    </div>
-                    <div class="col-3">
-                    <h3>PlayStation 5</h3>
-                    <img src="images/category-2.jpg">
-                    </div>
-                    <div class="col-3">
-                    <h3>Xbox One, Xbox Series<br> S/X</h3>
-                    <img src="images/category-3.jpg">
-                    </div>
-                </div>
-        </div>
-    </div>
-    
+     
 <!---- Zona produselor -->
     <div class="small-container">
-        <h2 class="title">Produse recomandate</h2>
+        
+        
             <div class="row">
                 <div class="col-4">
-                    <a href="product-details.html"><img src="images/product-1.jpg"></a>
-                    <a href="product-details.html"><h4>Watch Dogs: Legion | Uplay Key</h4></a>
+                    <img src="images/product-9.jpg">
+                    <h4>Black Ops Cold War | Blizzard Key</h4>
                     <div class="rating">
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
                         <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half"></i>
+                        <i class="fa fa-star-o"></i>
                     </div>
-                    <p>299,90 RON</p>
+                    <p>289,90 RON</p>
                 </div>
                 <div class="col-4">
                     <img src="images/product-2.jpg">
@@ -116,107 +119,10 @@
                     <p>99,90 RON</p>
                 </div>
             </div>
-            <h2 class="title">Cele mai noi produse</h2>
-            <div class="row">
-                <div class="col-4">
-                    <img src="images/product-5.jpg">
-                    <h4>DIRT 5 Amplified Edition | Steam Key</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <p>90,90 RON</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/product-6.jpg">
-                    <h4>Assassin's Creed Valhalla Ultimate Edition | Uplay Key</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>312,90 RON</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/product-7.jpg">
-                    <h4>XIII | Steam Key</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>189,90 RON</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/product-8.jpg">
-                    <h4>Godfall | Epic Games Key</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>289,90 RON</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/product-9.jpg">
-                    <h4>Black Ops Cold War | Blizzard Key</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>289,90 RON</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/product-10.jpg">
-                    <h4>Observer: System Redux | Steam Key</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>130,90 RON</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/product-11.jpg">
-                    <h4>The Falconeer | Steam Key</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>130,90 RON</p>
-                </div>
-                <div class="col-4">
-                    <img src="images/product-12.jpg">
-                    <h4>Red Dead Redemption 2 | Rockstar Key</h4>
-                    <div class="rating">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-o"></i>
-                        <i class="fa fa-star-o"></i>
-                    </div>
-                    <p>272,90 RON</p>
-                </div>
-            </div>
-    </div> 
-<!--- Oferte --->
+    
+    </div>
+     
+<!--- Oferte 
     <div class="offer">
         <div class="small-container">
             <div class="row">
@@ -233,7 +139,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--->
     
 <!--- Testimoniale 
     <div class="testimonial">
@@ -290,7 +196,7 @@
                 </div>
             </div>
             <hr>
-            <p class="copyright">Copyright 2020(+1) - Alexandru BECHER</p>
+            <p class="copyright">Copyright 2020 - Alexandru BECHER</p>
         </div>
     </div>
     
@@ -310,6 +216,34 @@
                     MenuItems.style.maxHeight = "0px";
                 }
         }
+        
+        
+        
+        function changeImage(a){
+            document.getElementById("ProductImg").src=a;
+            }
+        
     </script>
+    
+    
+<!--- js for product gallery ---->
+    <script>
+        
+            
+            /* SmallImgs[0].onClick = function(){
+                document.getElementById("ProductImg").src = SmallImgs[0].src;
+            }
+            SmallImgs[1].onClick = function(){
+                document.getElementById("ProductImg").src = SmallImgs[1].src;
+            }
+            SmallImgs[2].onClick = function(){
+                document.getElementById("ProductImg").src = SmallImgs[2].src;
+            }
+            SmallImgs[3].onClick = function(){
+                document.getElementById("ProductImg").src = SmallImgs[3].src;
+            } /*
+
+    </script>
+    
 </body>
 </html>

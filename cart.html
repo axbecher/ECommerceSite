@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products | Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+    
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" width="250px"></a>
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="https://github.com/axbecher/ECommerceSite">GITHUB</a></li>
+                        <li><a href="index.html">ACASA</a></li>
+                        <li><a href="products.html">PRODUSE</a></li>
+                        <li><a href="">DESPRE NOI</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="account.html">CONT</a></li>
+                    </ul>
+                </nav>
+                <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div>
+        </div>
+ 
+    <!----- cart items details ----->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quantity</th>
+                <th>Subtotal</th>
+            </tr>
+            <!---- Primul produs. --->
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-1.jpg">
+                        <div>
+                            <p>Watch Dogs: Legion | Uplay Key</p>
+                            <small>Price: 299.90 RON</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                
+                
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>299.90 RON</td>
+            </tr>
+            
+            <!---- Al doilea produs. --->
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-2.jpg">
+                        <div>
+                            <p>Tom Clancy's The Division 2 | Uplay Key</p>
+                            <small>Price: 104,90 RON</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+                
+                
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>104.90 RON</td>
+            </tr>
+            
+            <!---- Al treilea produs. --->
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/buy-3.jpg">
+                        <div>
+                            <p>DIRT 5 Amplified Edition | Steam Key</p>
+                            <small>Price: 90,90 RON</small>
+                            <br>
+                            <a href="">Remove</a>
+                        </div>
+                    </div>
+          
+                </td>
+                <td><input type="number" value="2"></td>
+                <td>181.8 RON</td>
+            </tr>
+        </table>
+        
+        
+        <div class="total-price">
+        
+            <table>
+                <tr>
+                    <td>Subtotal</td>
+                    <td>586.6 RON</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>35 RON</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>621.6 RON</td>
+                </tr>
+            </table>
+        
+        </div>
+        
+    </div>
+    
+<!--- Footer --->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Descarca aplicatia noastra</h3>
+                    <p>Descarca aplicatia noastra pentru Android si iOS.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" width="250px">
+                    <p>Scopul nostru este de a furniza un magazin online prin care pasionatii de gaming pot afla noutatile în domeniul jocurilor pe calculator si nu numai.</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Linkuri folositoare:</h3>
+                    <ul>
+                        <li>Cupoane</li>
+                        <li>Blogul nostru</li>
+                        <li>Politica de returnare</li>
+                        <li>Despre afiliere</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us:</h3>
+                    <ul>
+                        <li>FACEBOOK</li>
+                        <a href="https://github.com/axbecher/ECommerceSite"><li>Github</li></a>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2020 - Alexandru BECHER</p>
+        </div>
+    </div>
+    
+<!--- Javascript pentru meniu --->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+        
+        MenuItems.style.maxHeight = "0px";
+        
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px";
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px";
+                }
+        }
+        
+        
+        
+        function changeImage(a){
+            document.getElementById("ProductImg").src=a;
+            }
+        
+    </script>
+    
+</body>
+</html>
